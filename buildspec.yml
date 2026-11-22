@@ -1,0 +1,23 @@
+
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies"
+      - node --version
+      - npm --version
+
+  pre_build:
+    commands:
+      - echo "Starting pre-build phase"
+      - npm install
+
+  build:
+    commands:
+      - echo "Starting build phase"
+      - echo "Application build completed"
+
+  post_build:
+    commands:
+      - echo "Build process completed successfully"
